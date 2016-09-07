@@ -57,7 +57,7 @@ export const colorToReactStyle = function (fileContent) {
 
         classObj[classNameCamel] = {};
 
-        if (value.indexOf('#') != -1) {
+        if (value && value.indexOf('#') != -1) {
             classObj[classNameCamel]['color'] = value;
         }
 
